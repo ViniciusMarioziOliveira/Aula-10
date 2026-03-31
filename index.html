@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calcs</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="calcs">
+
+<h1>Calcs</h1>
+
+<input type="number" id="n1" placeholder="Número 1">
+<input type="number" id="n2" placeholder="Número 2">
+
+<h4>Operadores Comuns</h4>
+
+<div class="operadores">
+<button onclick="calcular('+')">+</button>
+<button onclick="calcular('-')">−</button>
+<button onclick="calcular('*')">×</button>
+<button onclick="calcular('/')">÷</button>
+</div>
+
+<h4>Operadores Avançados</h4>
+
+<div class="operadores">
+<button onclick="calcular('pot')">xʸ</button>
+<button onclick="calcular('raiz')">√x</button>
+</div>
+
+<input type="text" id="res" placeholder="Resultado" readonly>
+
+<button class="fixar" onclick="fixar()">📌 Fixar</button>
+
+</div>
+
+<div class="historico-box">
+
+<div class="historico-topo">
+<h3>Histórico</h3>
+<button class="deletar" onclick="limparHistorico()">🗑</button>
+</div>
+
+<div id="historico"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>   
+
+</body>
+</html>
